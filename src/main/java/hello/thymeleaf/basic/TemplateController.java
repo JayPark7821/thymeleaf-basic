@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TemplateController {
 
     @GetMapping("/fragment")
-    public String template(){
+    public String template() {
         return "template/fragment/fragmentMain";
     }
 
@@ -18,5 +18,8 @@ public class TemplateController {
         return "template/layout/layoutMain";
     }
 
-
+    @GetMapping("/layoutExtend")
+    public String layoutExtend() {
+        return "template/layoutExtend/layoutExtendMain";
+    }
 }
